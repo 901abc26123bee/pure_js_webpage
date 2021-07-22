@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  /*  box-sizing: border-box，它就會幫你自動計算扣除 border 或 padding 所剩餘的空間，應用在 content width 和 content height。 */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 450px;
+  /*
+  vh(view height)指瀏覽器內部的可視區域高度的百分比，
+  vh代表的是view height，也就是螢幕可視範圍高度的百分比；vw表示的是view width，也就是螢幕可是範圍寬度的百分比。
+  這兩個單位的使用上和百分比很類似，當我填100vh和100vw時，意思就是我的這個div要是整個螢幕的可是範圍，這個區塊會隨著瀏覽器的縮放而改變。
+ */
+  height: 100vh;
+  margin: 0;
+  background: #282828;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.todoList {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 500px;
+  background: #171717;
+  border-radius: 10px;
+  box-shadow: 0 7px 30px rgba(75, 70, 6, 0.3);
+}
+
+.cover .cover-inner {
+  height: 50px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+
+.content {
+  padding: 10px 20px;
+}
+.content form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 0 10px 0 5px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.content form > * {
+  background: transparent;
+  border: none;
+  height: 35px;
+}
+
+.content input[type="text"] {
+  padding: 0 5px;
+  font-size: 1.2rem;
+  color: #c7c7c7;
+  outline: none;
+}
+
+.content input-buttons a {
+  text-decoration: none;
+  border: none;
+}
+
+.align {
+  padding: 0;
+}
+
+.content li {
+  user-select: none;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content li i {
+  color: #c3c3c3;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+
+.plus-icon {
+  color:  #ffb510;
+}
+
+.clear button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.clear button:active {
+  border-radius: 2px;
+  box-shadow: 0px 2px 3px 2px  #67e2675b;
+}
